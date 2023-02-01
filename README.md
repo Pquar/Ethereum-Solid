@@ -54,3 +54,15 @@ Gas e o combustível da rede Ethereum, é usado para executar as funções dos c
 | gasPrice| Montante a ser pago pela transação processada |
 |--      |--         |
 | startGas/gasLimit | Quantidade limite de gas que a transação pode gastar, ou que voce esta disposto a gastar |
+
+### Siglas
+
+ABI: (Application Binary Interface), Lista todas as funções e variáveis ​​do contrato são listadas no ABI, que é usado para chamar as funções do contrato.
+
+Bytecode: é o código binário do contrato, que é usado para implantar o contrato na rede Ethereum.
+
+## WEb3
+
+Atualmente existem duas versões do Web3.js, a versão 0.x.x e a versão 1.x.x A versão 1.x é a versão mais recente e é a versão que usaremos. 
+A versão 0.x é a versão mais antiga e a que mais possui conteúdo sobre na internet e fóruns, possui um interface "primitiva" para trabalhar com chamadas de código async.
+A versão 1.x é a versão mais recente e é a versão que usaremos, e tem suporte a promises + async/await. 

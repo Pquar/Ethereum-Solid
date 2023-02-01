@@ -7,7 +7,7 @@ const Web3 = require('web3');
 
 //Instancia do Web3
 const web3 = new Web3(ganache.provider());
-
+/*
 class Car {
   park() {
     return 'stopped';
@@ -34,3 +34,4 @@ describe('Car Class', () => {
     assert.equal(car.drive(), 'vroom');
   });
 });
+*/
