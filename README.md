@@ -66,3 +66,62 @@ Bytecode: é o código binário do contrato, que é usado para implantar o contr
 Atualmente existem duas versões do Web3.js, a versão 0.x.x e a versão 1.x.x A versão 1.x é a versão mais recente e é a versão que usaremos. 
 A versão 0.x é a versão mais antiga e a que mais possui conteúdo sobre na internet e fóruns, possui um interface "primitiva" para trabalhar com chamadas de código async.
 A versão 1.x é a versão mais recente e é a versão que usaremos, e tem suporte a promises + async/await. 
+
+# Basic types
+
+| Type | Description | Example |
+|--    |--           |--       |
+| string | sequencia de caracteres | "Hello World" |
+| bool | true or false | true |
+| int | inteiro | 1 -1 33412|
+| uint | inteiro sem sinal (numero positivo) | 1 33412 3132 0|
+| fixed/unfixed | numero com decimal | 1.2 2321.2103131 -10.2|
+| address | endereço de uma conta | 0x1234567890123456789012345678901234567890 |
+|
+
+## Range of values
+**INTER RANGER**
+| Name | Lower Bound | Upper Bound |
+|:--:    |:--:   |:--:  |
+| int8 | -128 | 127 |
+| int16 | -32768 | 32767 |
+| int24 | -8388608 | 8388607 |
+| int32 | -2147483648 | 2147483647 |
+| int40 | -549755813888 | 549755813887 |
+| int48 | -140737488355328 | 140737488355327 |
+| int56 | -36028797018963968 | 36028797018963967 |
+| int64 | -9223372036854775808 | 9223372036854775807 |
+| ... | --- | ... | 
+| int256 | -57896044618658097711785492504343953926634992332820282019728792003956564819968 | 57896044618658097711785492504343953926634992332820282019728792003956564819967 |
+>obs: int == int256
+
+**UNSIGNED INTER RANGER**
+
+| Name | Lower Bound | Upper Bound |
+|:--:    |:--:   |:--:  |
+| uint8 | 0 | 255 |
+| uint16 | 0 | 65535 |
+| uint24 | 0 | 16777215 |
+| uint32 | 0 | 4294967295 |
+| ... | ... | ... |
+| uint256 | 0 | 115792089237316195423570985008687907853269984665640564039457584007913129639935 |
+
+>obs: uint == uint256
+
+# MSG FUNCTIONS
+
+| Function | Description |
+|--        |--           |
+| msg.data | Retorna os argumentos que estamos enviando  para  a função|
+| msg.gas | Retorna o gas que temos disponível para a função |
+| msg.sender | Retorna o endereço da conta que chamou a função |
+| msg.value | Retorna o valor que foi enviado para a função |
+
+# Reference Types
+
+| nome | Descrição | Exemplo |
+|--    |--         |--       |
+| fixed array | array com tamanho fixo | uint[3] |
+| dynamic array | array com tamanho dinamico | uint[] |
+| mapping | mapeamento de dados (Representa varias coisas) | mapping (address => uint) public balances; |
+| struct | estrutura de dados (Representa uma coisa) | struct Person { uint age; string name; } |
