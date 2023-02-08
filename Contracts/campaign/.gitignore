@@ -1,0 +1,6 @@
+/node_modules
+
+
+/ethereum/deploy.js
+/ethereum/build/Campaign.json
+/ethereum/build/CampaignFactory.json

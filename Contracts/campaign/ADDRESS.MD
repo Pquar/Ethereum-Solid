@@ -1,0 +1,5 @@
+Attempting to deploy from account 
+0x522954701B6292833d2b719936A5545c115D3089
+
+Contract deployed to 
+0x2519B9B1Cc6963e96DE0650a0032a42B3d884DFA
