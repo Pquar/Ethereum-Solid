@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.6",
+    "fs-extra": "^11.1.0",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.2.0",
+    "next": "^12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "solc": "^0.4.17",
+    "web3": "^1.8.2"
+  },
+  "name": "campaign",
+  "description": "| Name | Type | Purpose |\r | :---: | :---: | :---: |\r | description | string | descreve oque esta sendo a requisição que esta sendo solicitada |\r | amount | unit | valor da requisição que o manager que enviar para o fornecedor |\r | recipient | address | endereço do fornecedor que vai receber os tokens |\r | complete | bool | se a requisição foi completada ou não |\r | approvals | mapping | Acha quem ja votou |\r | approvalCount | uint | quantidade de votos que a requisição recebeu |",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
